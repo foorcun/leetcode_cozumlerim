@@ -32,6 +32,6 @@ class Solution {
         }
         return prev; // curr == null => artik prev eski son Node, yeni Head demektir.
 
-    }
+    } // not temel pointerlar: 3 adet; prev, curr, temp
 }
 
