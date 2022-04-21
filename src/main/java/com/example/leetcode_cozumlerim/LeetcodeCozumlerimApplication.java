@@ -4,6 +4,9 @@ import com.example.leetcode_cozumlerim.ReorderList143.Solution;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.util.HashMap;
+import java.util.Map;
+
 @SpringBootApplication
 public class LeetcodeCozumlerimApplication {
 
@@ -13,6 +16,8 @@ public class LeetcodeCozumlerimApplication {
 		Solution sol = new Solution();
 		sol.reorderList();
 
+
+		Map<String,Integer> m = new HashMap<>();
 	}
 
 }
