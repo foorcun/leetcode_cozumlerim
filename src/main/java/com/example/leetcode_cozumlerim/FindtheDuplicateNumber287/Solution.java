@@ -1,5 +1,8 @@
 package com.example.leetcode_cozumlerim.FindtheDuplicateNumber287;
 
+
+// link : https://www.youtube.com/watch?v=wjYnzkAhcNk
+//link : https://www.youtube.com/watch?v=dfIqLxAf-8s
 class Solution {
     public int findDuplicate(int[] nums) {
 
