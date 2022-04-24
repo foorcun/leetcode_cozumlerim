@@ -4,8 +4,6 @@ import java.util.Arrays;
 
 public class Solution {
   public char[][] input = new Params().board;
-    int c =0;
-    int r =0;
 
     char [][] board;
 
@@ -13,23 +11,21 @@ public class Solution {
     public void solveIt(char[][] board){
         this.board = board;
         helper(0,0);
-
-
-//
-//      // dolu yere islem yapilmaz
-//      if(this.input[r][c]!='.'){
-////          solveIt(r +1);
-//      }
   }
 
+    //DFS backtracking solver
+   // boolean ya da void return edebilir
+    //input olmak zorunda
   private boolean helper(int row, int col){
       //start the next row
+      // 6. ADIM - put pointer next one
+      // birden fazla input varsa diger pointeri ileri tasimak gerekiyor
+      // bir pointer varsa o da zaten input ile ileri tasiniyor
       if(col == 9){
           row++;
           col = 0;
       }
-
-      // finish the search
+      // finish the search // 7. ADIM Bitis sarti
       //bitis sarti
       if(row ==9){
           return true;
@@ -41,18 +37,22 @@ public class Solution {
       }
 
       //DFS all valid options
-      for(char i='1';i<='9'; i++){ // koyulacak degerlerin tek tek denemesi loop
+      for(char i='1';i<='9'; i++){ // 4. ADIM koyulacak degerlerin tek tek denemesi loop
+          //4. Adim DFS - for loop for all possible values
 
           //isValid to Continue
-          if(!isValid(row,col,i)){
+          if(!isValid(row,col,i)){ // 5. ADIM
+              //5. ADIM - isValid check - rules of the game
               continue;
           }
-          board[row][col]=i; // Action
-          if(helper(row,col+1)==true) { // bitti mi check
+          board[row][col]=i;  //1. ADIM Action
+
+          if(helper(row,col+1)==true) { // 2. ADIM Iteration
+              // ve bitti mi check. if icinde helper(row,col+1) ile function calistiriliyor
               printTheBoard(this.board);
               return true;
           }
-          board[row][col]='.'; // Remove action
+          board[row][col]='.'; // 3. ADIM Remove action
       }
       return  false; // dead endlerden birine gelindei ya da cozulemedi
   }
@@ -110,3 +110,21 @@ public class Solution {
             {'.', '.', '.', '.', '8', '.', '.', '7', '9'}};
 
 }
+
+
+
+// 6. ADIM - put pointer next one
+// birden fazla input varsa diger pointeri ileri tasimak gerekiyor
+// bir pointer varsa o da zaten input ile ileri tasiniyor
+
+// 7. ADIM Bitis sarti
+
+//4. Adim DFS - for loop for all possible values
+//5. ADIM - isValid check - rules of the game
+
+//1. ADIM Action
+
+// 2. ADIM Iteration
+// ve bitti mi check. if icinde helper(row,col+1) ile function calistiriliyor
+
+// 3. ADIM Remove action
