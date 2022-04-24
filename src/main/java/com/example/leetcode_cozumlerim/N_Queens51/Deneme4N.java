@@ -94,6 +94,11 @@ class Params {
 
 // 7. ADIM Bitis sarti
 
+//// ASIL BACKTRACK algoritmasi 4 ADIMdan olusuyor. 5,6,7 . adimlar backtrackin BULDUGU ILK OLASI degeri alip kullanmak
+/// ustune kurulu. mesela n-queen ya da sudoku. diyor ki " bana OLABILIR i olan bir deger ver. olursa devam olmazsa bir sonraki.."
+// BACKTRACK aslinda KOMBINASYON bulma ile ilgili
+// kombinasyonlarin tamami icin for kod satiri hemen ustunde RESULT ADIMI kullanmak gerekir. class Subsets2 oldugu gibi
+
 //4. Adim DFS - for loop for all possible values
 //5. ADIM - isValid check - rules of the game
 

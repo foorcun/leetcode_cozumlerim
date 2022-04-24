@@ -15,7 +15,7 @@ public class MazeFinder {
 
         // 7. ADIM Bitis sarti
 
-         if(row == 3 && col == 3){
+         if(row == world.length-1 && col == world.length-1){
              return true;
          }
 
@@ -45,7 +45,7 @@ public class MazeFinder {
         // 2. ADIM Iteration
         // ve bitti mi check. if icinde helper(row,col+1) ile function calistiriliyor
          if(findPath(row,col)==true){
-             System.out.println(Arrays.deepToString(map));
+//             System.out.println(Arrays.deepToString(map));
              return true;
          }
 
@@ -90,8 +90,10 @@ public class MazeFinder {
     }
 
     public void printTheWorld() {
-        System.out.println(Arrays.deepToString(world));
-
+//        System.out.println(Arrays.deepToString(world));
+        for(int i =0;i< world.length;i++){
+            System.out.println(Arrays.toString(world[i]));
+        }
     }
 
     public void printTheMap() {
@@ -114,15 +116,35 @@ public class MazeFinder {
              {0, 0, 1,1}};
 
 
-  int[][] world  = {{1, 0, 0, 0},
+  int[][] world1  = {{1, 0, 0, 0},
      {1, 1, 0, 1},
      {0, 1, 0, 0},
      {1, 1, 1, 1}};
-     int[][] map = {
+     int[][] world  = {
+             {1, 1, 0, 0,0,1,1},
+             {0, 1, 1, 1,1,1,1},
+             {1, 0, 0, 1,0,1,1},
+             {0, 1, 1, 1,0,0,1},
+             {0, 1, 0, 1,1,0,0},
+             {1, 0, 1, 1,1,1,1},
+     };
+
+
+
+     int[][] map0 = {
              {1, 0, 0,0},
              {0, 0, 0,0},
              {0, 0, 0,0},
              {0, 0, 0,0}};
+
+     int[][] map ={
+             {1, 0, 0, 0,0,0,0},
+             {0, 0, 0, 0,0,0,0},
+             {0, 0, 0, 0,0,0,0},
+             {0, 0, 0, 0,0,0,0},
+             {0, 0, 0, 0,0,0,0},
+             {0, 0, 0, 0,0,0,0},
+     };
 }
 
 
@@ -133,6 +155,11 @@ public class MazeFinder {
 // bir pointer varsa o da zaten input ile ileri tasiniyor
 
 // 7. ADIM Bitis sarti
+
+//// ASIL BACKTRACK algoritmasi 4 ADIMdan olusuyor. 5,6,7 . adimlar backtrackin BULDUGU ILK OLASI degeri alip kullanmak
+/// ustune kurulu. mesela n-queen ya da sudoku. diyor ki " bana OLABILIR i olan bir deger ver. olursa devam olmazsa bir sonraki.."
+// BACKTRACK aslinda KOMBINASYON bulma ile ilgili
+// kombinasyonlarin tamami icin for kod satiri hemen ustunde RESULT ADIMI kullanmak gerekir. class Subsets2 oldugu gibi
 
 //4. Adim DFS - for loop for all possible values
 //5. ADIM - isValid check - rules of the game
