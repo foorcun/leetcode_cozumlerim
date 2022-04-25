@@ -1,6 +1,7 @@
 package com.example.leetcode_cozumlerim;
 
 import com.example.leetcode_cozumlerim.N_Queens51.Deneme4N;
+import com.example.leetcode_cozumlerim.Permutations46.SolutionPermutations;
 import com.example.leetcode_cozumlerim.Subsets78.Subsets2;
 import com.example.leetcode_cozumlerim.maze.MazeFinder;
 import org.springframework.boot.SpringApplication;
@@ -55,7 +56,7 @@ public class LeetcodeCozumlerimApplication {
 
 
 //		System.out.println(Subsets2.subsets(new int[] {1,5,3}));
-		System.out.println(Subsets2.subsets(new int[] {0}));
+//		System.out.println(Subsets2.subsets(new int[] {0}));
 
 
 //		Solution sol = new Solution();
@@ -63,6 +64,9 @@ public class LeetcodeCozumlerimApplication {
 //		var vv =sol.combinationSum(new int[] {2,7,6,3,5,1}, 9);
 //		System.out.println(Arrays.deepToString(vv.toArray()));
 
+		SolutionPermutations sol = new SolutionPermutations();
+		var result = sol.permute(new int[] {1,2,3});
+		System.out.println(Arrays.deepToString(result.toArray()));
 
 	}
 
