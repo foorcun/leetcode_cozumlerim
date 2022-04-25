@@ -59,14 +59,14 @@ public class LeetcodeCozumlerimApplication {
 //		System.out.println(Subsets2.subsets(new int[] {0}));
 
 
-//		Solution sol = new Solution();
-////		var vv =sol.combinationSum(new int[] {2,3,6,7}, 7);
+		Solution sol = new Solution();
+		var vv =sol.combinationSum(new int[] {2,3,6,7}, 7);
 //		var vv =sol.combinationSum(new int[] {2,7,6,3,5,1}, 9);
-//		System.out.println(Arrays.deepToString(vv.toArray()));
+		System.out.println(Arrays.deepToString(vv.toArray()));
 
 		SolutionPermutations sol = new SolutionPermutations();
-		var result = sol.permute(new int[] {1,2,3});
-		System.out.println(Arrays.deepToString(result.toArray()));
+//		var result = sol.permute(new int[] {1,2,3});
+//		System.out.println(Arrays.deepToString(result.toArray()));
 
 	}
 
