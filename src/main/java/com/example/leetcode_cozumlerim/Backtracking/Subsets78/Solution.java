@@ -1,4 +1,4 @@
-package com.example.leetcode_cozumlerim.Subsets78;
+package com.example.leetcode_cozumlerim.Backtracking.Subsets78;
 
 import java.util.ArrayList;
 import java.util.HashSet;

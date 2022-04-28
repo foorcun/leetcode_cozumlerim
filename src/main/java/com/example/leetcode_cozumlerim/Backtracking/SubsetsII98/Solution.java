@@ -1,4 +1,4 @@
-package com.example.leetcode_cozumlerim.SubsetII98;
+package com.example.leetcode_cozumlerim.Backtracking.SubsetsII98;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -13,13 +13,13 @@ class Solution {
         Arrays.sort(nums);
         result = new ArrayList<>();
 
-        bt(0 ,new ArrayList<>(),nums);
+        bt(0 ,nums,new ArrayList<>());
 
         return result;
 
     }
 
-    private static void bt(int start, ArrayList<Integer> curr,int[] nums){
+    private static void bt(int start,int[] nums, ArrayList<Integer> curr){
         // start = 0 , tree nin tepe Nodu ki bos kume []
         result.add(new ArrayList<Integer>(curr)); // Tum kombinasyonlari toplandigi result.
         // curr burda gecici olarak elemanlari tutan Box gibi
@@ -34,7 +34,7 @@ class Solution {
             }
 
             curr.add(nums[i]); //1. ADIM action
-            bt(i+1,curr,nums); // 2. ADIM Iteration
+            bt(i+1,nums,curr); // 2. ADIM Iteration
             curr.remove(curr.size()-1); // 3. ADIM Remove Action
             // remove action da i degilde curr.size()-1 almamizin sebebi
             // curr eleman sayisi ile i nin baglantisi yok

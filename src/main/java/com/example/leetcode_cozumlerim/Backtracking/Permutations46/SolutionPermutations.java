@@ -1,4 +1,4 @@
-package com.example.leetcode_cozumlerim.Permutations46;
+package com.example.leetcode_cozumlerim.Backtracking.Permutations46;
 
 import java.util.ArrayList;
 import java.util.List;

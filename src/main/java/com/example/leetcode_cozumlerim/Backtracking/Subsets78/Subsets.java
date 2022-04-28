@@ -1,4 +1,4 @@
-package com.example.leetcode_cozumlerim.Subsets78;
+package com.example.leetcode_cozumlerim.Backtracking.Subsets78;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -7,12 +7,12 @@ import java.util.List;
 // link: https://www.youtube.com/watch?v=REOH22Xwdkk
 public class Subsets { // bu algoritma bir dalin en alttaki Node una inip siblings olarak ekiyor. Subsets2 deki algoritma Tree deki Node ugradigi anda resulta ekliyor.
     static int counter =0;
-    private static void dfs(List<List<Integer>> result, List<Integer> current, int i, int[] nums) {
+    private static void dfs(int i,List<List<Integer>> result, List<Integer> current,  int[] nums) {
         if (i >= nums.length) {
             result.add(new ArrayList<>(current));
-            counter++;
-            var vv = current.toString();
-            System.out.println(Arrays.deepToString(result.toArray()));
+//            counter++;
+//            var vv = current.toString();
+//            System.out.println(Arrays.deepToString(result.toArray()));
             return;
         }
 
@@ -20,17 +20,17 @@ public class Subsets { // bu algoritma bir dalin en alttaki Node una inip siblin
         current.add(nums[i]);
         var vvv0 = current.toString();
 
-        dfs(result, current, i + 1, nums);
+        dfs(i + 1,result, current,  nums);
 
         // decision to NOT TO include nums[i]
         current.remove(current.size() - 1);
         var vvv = current.toString();
-        dfs(result, current, i + 1, nums);
+        dfs(i + 1,result, current,  nums);
     }
     public static List<List<Integer>> findSubsets(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
         List<Integer> current = new ArrayList<>();
-        dfs(result, current, 0, nums);
+        dfs( 0,result, current, nums);
         return result;
     }
 

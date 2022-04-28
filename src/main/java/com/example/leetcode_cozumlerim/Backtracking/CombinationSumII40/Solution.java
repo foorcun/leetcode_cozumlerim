@@ -1,4 +1,4 @@
-package com.example.leetcode_cozumlerim.CombinationSumII40;
+package com.example.leetcode_cozumlerim.Backtracking.CombinationSumII40;
 
 
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package com.example.leetcode_cozumlerim.maze;
+package com.example.leetcode_cozumlerim.Backtracking.maze;
 
 import java.util.Arrays;
 
@@ -20,7 +20,6 @@ public class MazeFinder {
          }
 
         //4. Adim DFS - for loop for all possible values
-
          String[] yonler = {"r","l","u","d"};
          for(int i =0;i < yonler.length;i++){
 

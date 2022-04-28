@@ -1,4 +1,4 @@
-package com.example.leetcode_cozumlerim.SudokuSolver37;
+package com.example.leetcode_cozumlerim.Backtracking.SudokuSolver37;
 
 import java.util.Arrays;
 
@@ -45,6 +45,7 @@ public class Solution {
               //5. ADIM - isValid check - rules of the game
               continue;
           }
+
           board[row][col]=i;  //1. ADIM Action
 
           if(helper(row,col+1)==true) { // 2. ADIM Iteration

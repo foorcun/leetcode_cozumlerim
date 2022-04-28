@@ -1,4 +1,4 @@
-package com.example.leetcode_cozumlerim.Subsets78;
+package com.example.leetcode_cozumlerim.Backtracking.Subsets78;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,6 +22,7 @@ public class Subsets2 { // bu algoritma Tree deki Node ugradigi anda resulta ekl
     private static void bt(int start, ArrayList<Integer> curr,int[] nums){
         // start = 0 , tree nin tepe Nodu ki bos kume []
         result.add(new ArrayList<Integer>(curr)); // Tum kombinasyonlari toplandigi result.
+        int a=0;
         // curr burda gecici olarak elemanlari tutan Box gibi
         // bu Box a tum kombinasyonlar gelip gidiyor
 

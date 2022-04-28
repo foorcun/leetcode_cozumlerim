@@ -1,10 +1,10 @@
-package com.example.leetcode_cozumlerim.CombinationSum39;
+package com.example.leetcode_cozumlerim.Backtracking.CombinationSum39;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
-public class Solution {
+// Leet code da Accepted aldigim kod bu
+class Solution2 {
 
     List<List<Integer>> result = new ArrayList<>();
 
@@ -18,26 +18,18 @@ public class Solution {
     public void bt(int start, ArrayList<Integer> curr,int[] candidates, int target){
 
         // Result adim ama sart var
-        var a = sumOf(curr);
-        if(sumOf(curr)== target){ // 7. Adim Bitis adimi
-//            var vvvv0= Arrays.deepToString(curr.toArray());
-//            System.out.println("curr is : " + vvvv0);
+        if(sumOf(curr)== target){
             result.add(new ArrayList<>(curr));
-//            var vvvv= Arrays.deepToString(result.toArray());
-//            System.out.println("Result is : " + vvvv);
         }
 
         for(int i = start; i< candidates.length; i++){ // 4. adim for loop
 
-
             // 5. Adim isValid
-            if(sumOf(curr)>target){
+            if(sumOf(curr) > target){
                 continue;
             }
 
             curr.add(candidates[i]); // 1. Adim action
-//            System.out.println("curr : " + Arrays.deepToString(curr.toArray()));
-
             bt(i,curr,candidates,target);  // 2. Adim Iteration
             curr.remove(curr.size() -1 );  //3. adim Remove action
 

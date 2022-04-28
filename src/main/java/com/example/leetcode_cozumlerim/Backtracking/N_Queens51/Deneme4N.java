@@ -1,4 +1,4 @@
-package com.example.leetcode_cozumlerim.N_Queens51;
+package com.example.leetcode_cozumlerim.Backtracking.N_Queens51;
 
 import java.util.Arrays;
 import java.util.HashSet;

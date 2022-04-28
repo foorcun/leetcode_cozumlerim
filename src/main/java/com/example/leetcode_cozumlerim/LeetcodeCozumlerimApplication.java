@@ -1,19 +1,13 @@
 package com.example.leetcode_cozumlerim;
 
-import com.example.leetcode_cozumlerim.N_Queens51.Deneme4N;
-import com.example.leetcode_cozumlerim.Permutations46.SolutionPermutations;
-import com.example.leetcode_cozumlerim.Subsets78.Subsets2;
-import com.example.leetcode_cozumlerim.maze.MazeFinder;
+import com.example.leetcode_cozumlerim.Backtracking.Temeller.Temel1;
+import com.example.leetcode_cozumlerim.RecursionDeneme.RecursionDeneme;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import com.example.leetcode_cozumlerim.CombinationSum39.Solution;
-
+//import com.example.leetcode_cozumlerim.Backtracking.CombinationSum39.Solution;
+import com.example.leetcode_cozumlerim.Backtracking.LetterCombinationsofaPhoneNumber17.Solution;
 
 import java.util.Arrays;
-import java.util.List;
-
-import static com.example.leetcode_cozumlerim.Subsets78.Subsets.findSubsets;
 
 @SpringBootApplication
 public class LeetcodeCozumlerimApplication {
@@ -33,7 +27,7 @@ public class LeetcodeCozumlerimApplication {
 //		sol.solveIt(sol.input);
 
 		// N_queen solver
-		Deneme4N ddd = new Deneme4N();
+//		Deneme4N ddd = new Deneme4N();
 //		ddd.printTheBoard();
 //		ddd.solveNQueens();
 
@@ -59,14 +53,29 @@ public class LeetcodeCozumlerimApplication {
 //		System.out.println(Subsets2.subsets(new int[] {0}));
 
 
-		Solution sol = new Solution();
-		var vv =sol.combinationSum(new int[] {2,3,6,7}, 7);
-//		var vv =sol.combinationSum(new int[] {2,7,6,3,5,1}, 9);
-		System.out.println(Arrays.deepToString(vv.toArray()));
+//		Solution sol = new Solution();
+//		var vv =sol.combinationSum(new int[] {2,3,6,7}, 7);
+////		var vv =sol.combinationSum(new int[] {2,7,6,3,5,1}, 9);
+//		System.out.println(Arrays.deepToString(vv.toArray()));
 
-		SolutionPermutations sol = new SolutionPermutations();
+//		SolutionPermutations sol = new SolutionPermutations();
 //		var result = sol.permute(new int[] {1,2,3});
 //		System.out.println(Arrays.deepToString(result.toArray()));
+
+//		WSSolution ws = new WSSolution();
+//
+//		System.out.println(ws.exist());
+
+//		Solution sol = new Solution();
+//		sol.letterCombinations("23");
+
+//		RecursionDeneme rd = new RecursionDeneme();
+//		rd.doIt();
+
+//		Temel1 t = new Temel1();
+//		t.doIt();
+
+		Temel1.doIt();
 
 	}
 
