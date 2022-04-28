@@ -1,6 +1,7 @@
 package com.example.leetcode_cozumlerim;
 
 import com.example.leetcode_cozumlerim.Backtracking.Temeller.Temel1;
+import com.example.leetcode_cozumlerim.Backtracking.Temeller.Temel2;
 import com.example.leetcode_cozumlerim.RecursionDeneme.RecursionDeneme;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -75,7 +76,8 @@ public class LeetcodeCozumlerimApplication {
 //		Temel1 t = new Temel1();
 //		t.doIt();
 
-		Temel1.doIt();
+//		Temel1.doIt();
+		Temel2.doIt();
 
 	}
 
