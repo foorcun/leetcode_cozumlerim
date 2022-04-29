@@ -4,6 +4,7 @@ import com.example.leetcode_cozumlerim.Backtracking.N_Queens51.Deneme4Nver2;
 import com.example.leetcode_cozumlerim.Backtracking.Temeller.Temel1;
 import com.example.leetcode_cozumlerim.Backtracking.Temeller.Temel2;
 import com.example.leetcode_cozumlerim.Backtracking.Temeller.Temel3;
+import com.example.leetcode_cozumlerim.Backtracking.Temeller.Temel4;
 import com.example.leetcode_cozumlerim.RecursionDeneme.RecursionDeneme;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -83,8 +84,10 @@ public class LeetcodeCozumlerimApplication {
 
 //		Temel3.doIt();
 
-		Deneme4Nver2 ddd= new Deneme4Nver2();
-		ddd.doIt();
+//		Deneme4Nver2 ddd= new Deneme4Nver2();
+//		ddd.doIt();
+
+		Temel4.permute();
 
 	}
 
