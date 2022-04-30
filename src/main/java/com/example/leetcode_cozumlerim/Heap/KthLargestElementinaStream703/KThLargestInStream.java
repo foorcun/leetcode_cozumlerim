@@ -1,4 +1,4 @@
-package com.example.leetcode_cozumlerim.KthLargestElementinaStream703;
+package com.example.leetcode_cozumlerim.Heap.KthLargestElementinaStream703;
 
 import java.util.PriorityQueue;
 
@@ -7,7 +7,7 @@ public class KThLargestInStream {
     private PriorityQueue<Integer> minHeap;
     public KThLargestInStream(int k, int[] nums) {
         this.k=k;
-        minHeap = new PriorityQueue<>((a , b) -> a - b); // minHeap
+        minHeap = new PriorityQueue<>((a , b) -> a - b); // minHeap // KthLargestElementinanArray215 daha ii
         for(int num: nums) {
             minHeap.add(num); // add new Node
         }

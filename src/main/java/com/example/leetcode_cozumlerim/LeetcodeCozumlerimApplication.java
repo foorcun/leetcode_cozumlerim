@@ -1,19 +1,11 @@
 package com.example.leetcode_cozumlerim;
 
-import com.example.leetcode_cozumlerim.Backtracking.N_Queens51.Deneme4Nver2;
-import com.example.leetcode_cozumlerim.Backtracking.Temeller.Temel1;
-import com.example.leetcode_cozumlerim.Backtracking.Temeller.Temel2;
-import com.example.leetcode_cozumlerim.Backtracking.Temeller.Temel3;
-import com.example.leetcode_cozumlerim.Backtracking.Temeller.Temel4;
-import com.example.leetcode_cozumlerim.KthLargestElementinaStream703.KThLargestInStream;
-import com.example.leetcode_cozumlerim.LastStoneWeight1046.SolutionLastStoneWeight1046;
-import com.example.leetcode_cozumlerim.RecursionDeneme.RecursionDeneme;
+import com.example.leetcode_cozumlerim.Heap.KthLargestElementinanArray215.SolutionKthLargestElementinanArray215;
+import com.example.leetcode_cozumlerim.Heap.LastStoneWeight1046.SolutionLastStoneWeight1046;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 //import com.example.leetcode_cozumlerim.Backtracking.CombinationSum39.Solution;
-import com.example.leetcode_cozumlerim.Backtracking.LetterCombinationsofaPhoneNumber17.Solution;
 
-import java.util.Arrays;
 
 @SpringBootApplication
 public class LeetcodeCozumlerimApplication {
@@ -92,13 +84,22 @@ public class LeetcodeCozumlerimApplication {
 //		Temel4.permute();
 
 
-//		SolutionLastStoneWeight1046 s = new SolutionLastStoneWeight1046();
-//		int[] stones = {2,7,4,1,8,1};
-//		s.lastStoneWeight(stones);
-		System.out.println(
-				SolutionLastStoneWeight1046.
-						lastStoneWeight(new int[]{2,7,4,1,8,1}));
+////		SolutionLastStoneWeight1046 s = new SolutionLastStoneWeight1046();
+////		int[] stones = {2,7,4,1,8,1};
+////		s.lastStoneWeight(stones);
+//		System.out.println(
+//				SolutionLastStoneWeight1046.
+//						lastStoneWeight(new int[]{2,7,4,1,8,1}));
+
+		System.out.println(SolutionKthLargestElementinanArray215.findKthLargest(new int[] {3,2,1,5,6,4},2));
+
+
+
+
+
+
+
+
+
 	}
-
-
 }

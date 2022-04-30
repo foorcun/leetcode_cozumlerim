@@ -1,4 +1,4 @@
-package com.example.leetcode_cozumlerim.LastStoneWeight1046;
+package com.example.leetcode_cozumlerim.Heap.LastStoneWeight1046;
 
 import java.util.PriorityQueue;
 
