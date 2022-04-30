@@ -18,18 +18,19 @@ public class Temel4 {
 
     private static void bt(  int nums[], ArrayList<Integer> curr, boolean[] used){
 
-        if(curr.size() == nums.length){
+        if(curr.size() == nums.length){ // burdan depth olarak alma yapiyoruz
             result.add(new ArrayList<>(curr));
         }
 
-        for(int i=0 ; i< nums.length;i++){;
-            if(used[i] == true){
+        for(int i=0 ; i< nums.length;i++){
+            if(used[i] == true){ // her depth e giren eleman bu used listesine giriyor
                 continue;
             }
             used[i]= true;
             curr.add(nums[i]);
 
-            bt(nums, curr, used);
+            bt(nums, curr, used); // her depth e giren eleman bu used listesine giriyor
+                                // bir sonraki depthe burdan veriliyor bu bilgi
 
             curr.remove(curr.size() -1);
             used[i]= false;
