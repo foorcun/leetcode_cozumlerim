@@ -8,7 +8,6 @@ public class SolutionLastStoneWeight1046 {
     public static int lastStoneWeight(int[] stones) {
 
         PriorityQueue<Integer> maxHeap = new PriorityQueue<>((a,b)->b-a);
-        var v = maxHeap.poll();
 
         for(int s : stones){
 //            System.out.println("s degeri " + s);
