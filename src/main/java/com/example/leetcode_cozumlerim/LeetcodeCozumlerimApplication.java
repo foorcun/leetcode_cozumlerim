@@ -1,5 +1,6 @@
 package com.example.leetcode_cozumlerim;
 
+import com.example.leetcode_cozumlerim.EvaluateReversePolishNotation150.EvaluateReversePolishNotation;
 import com.example.leetcode_cozumlerim.SlidingWindow.LongestSubStringReplacementWithSameLetter424.SolutionWithCharArray;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -94,8 +95,8 @@ public class LeetcodeCozumlerimApplication {
 
 //		System.out.println(LongestSubstringWithoutRepeatingCharacters3.lengthOfLongestSubstring(""));
 
-		System.out.println(SolutionWithCharArray.characterReplacement("AABBA",2));
+		//System.out.println(SolutionWithCharArray.characterReplacement("AABBA",2));
 
-
+		System.out.println(EvaluateReversePolishNotation.evalRPN(new String[] {"2","1","+","3","*"}));
 	}
 }
