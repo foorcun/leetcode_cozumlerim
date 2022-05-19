@@ -1,4 +1,4 @@
-package com.example.leetcode_cozumlerim.LongestSubstringWithoutRepeatingCharacters3;
+package com.example.leetcode_cozumlerim.SlidingWindow.LongestSubstringWithoutRepeatingCharacters3;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -27,7 +27,7 @@ public class LongestSubstringWithoutRepeatingCharacters3 {
 
 
             } else {
-                window.remove(s.charAt(l));
+                window.remove(s.charAt(l)); //pop action
                 l++;
             }
 

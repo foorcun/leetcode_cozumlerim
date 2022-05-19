@@ -1,9 +1,6 @@
 package com.example.leetcode_cozumlerim;
 
-import com.example.leetcode_cozumlerim.Backtracking.LetterCombinationsofaPhoneNumber17.Solution;
-import com.example.leetcode_cozumlerim.Heap.KthLargestElementinanArray215.SolutionKthLargestElementinanArray215;
-import com.example.leetcode_cozumlerim.Heap.LastStoneWeight1046.SolutionLastStoneWeight1046;
-import com.example.leetcode_cozumlerim.LongestSubstringWithoutRepeatingCharacters3.LongestSubstringWithoutRepeatingCharacters3;
+import com.example.leetcode_cozumlerim.SlidingWindow.LongestSubStringReplacementWithSameLetter424.SolutionWithCharArray;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 //import com.example.leetcode_cozumlerim.Backtracking.CombinationSum39.Solution;
@@ -95,7 +92,9 @@ public class LeetcodeCozumlerimApplication {
 
 //		System.out.println(SolutionKthLargestElementinanArray215.findKthLargest(new int[] {3,2,1,5,6,4},2));
 
-		System.out.println(LongestSubstringWithoutRepeatingCharacters3.lengthOfLongestSubstring(""));
+//		System.out.println(LongestSubstringWithoutRepeatingCharacters3.lengthOfLongestSubstring(""));
+
+		System.out.println(SolutionWithCharArray.characterReplacement("AABBA",2));
 
 
 	}

@@ -1,4 +1,4 @@
-package com.example.leetcode_cozumlerim.BestTimetoBuyandSellStock121;
+package com.example.leetcode_cozumlerim.SlidingWindow.BestTimetoBuyandSellStock121;
 
 public class BestTimetoBuyandSellStock121 {
 
