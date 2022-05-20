@@ -1,4 +1,4 @@
-package com.example.leetcode_cozumlerim.FindtheDuplicateNumber287;
+package com.example.leetcode_cozumlerim.LinkedList.FindtheDuplicateNumber287;
 
 
 // link : https://www.youtube.com/watch?v=wjYnzkAhcNk

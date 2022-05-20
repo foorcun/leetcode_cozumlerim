@@ -1,4 +1,4 @@
-package com.example.leetcode_cozumlerim.ContainsDuplicate217;
+package com.example.leetcode_cozumlerim.ArrayAndHashing.ContainsDuplicate217;
 
 import java.util.HashSet;
 import java.util.Set;

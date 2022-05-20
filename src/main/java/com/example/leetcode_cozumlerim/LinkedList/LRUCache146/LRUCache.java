@@ -1,4 +1,4 @@
-package com.example.leetcode_cozumlerim.LRUCache146;
+package com.example.leetcode_cozumlerim.LinkedList.LRUCache146;
 
 
 import java.util.HashMap;

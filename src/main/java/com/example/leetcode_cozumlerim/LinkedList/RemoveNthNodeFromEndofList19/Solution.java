@@ -1,4 +1,4 @@
-package com.example.leetcode_cozumlerim.RemoveNthNodeFromEndofList19;
+package com.example.leetcode_cozumlerim.LinkedList.RemoveNthNodeFromEndofList19;
 
 /**
  * Definition for singly-linked list.

@@ -1,7 +1,6 @@
 package com.example.leetcode_cozumlerim;
 
-import com.example.leetcode_cozumlerim.EvaluateReversePolishNotation150.EvaluateReversePolishNotation;
-import com.example.leetcode_cozumlerim.SlidingWindow.LongestSubStringReplacementWithSameLetter424.SolutionWithCharArray;
+import com.example.leetcode_cozumlerim.Stack.EvaluateReversePolishNotation150.EvaluateReversePolishNotation;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 //import com.example.leetcode_cozumlerim.Backtracking.CombinationSum39.Solution;

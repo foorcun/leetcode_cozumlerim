@@ -1,6 +1,6 @@
-package com.example.leetcode_cozumlerim.ReorderList143;
+package com.example.leetcode_cozumlerim.LinkedList.ReorderList143;
 
-public class Solution { // merge with DummyNode
+public class Solution2 { // merge with just pointers
     ListNode head = new ListNode(1,
             new ListNode(2,
                     new ListNode(3,
@@ -43,50 +43,20 @@ public class Solution { // merge with DummyNode
         }
 
 
-        //merge with DummyNode
-        ListNode dummy = new ListNode();
-        ListNode tail = dummy;
-
+        //merge
         ListNode f = head; // pointer for first-half
         ListNode s = prev; // pointer for second-half
-        System.out.println("sdfasdf " + s.val);
+        while (s != null) { // second-half ya ayni uzunlukta ya daha kisa o yuzden sadece buna baksak yeter
+            ListNode temp1 = f.next;
+            ListNode temp2 = s.next;
 
-        while (f != null || s != null) {
-            if (f != null) {
-                tail.next = f;
-                f = f.next;
-                tail = tail.next;
-
-            }
-            if (s != null) {
-                tail.next = s;
-                s = s.next;
-                tail = tail.next;
-
-            }
-
+            f.next = s; // f -> s yapar
+            s.next = temp1; // s-> temp1(ilk f.next) yapar
+            f = temp1; // f = temp1(ilk f.next yani pointer i bir ileri tasir)
+            s = temp2; // s = temp2(ilk s.next yani pointer i bir ileri tasir)
 
         }
 
         //return dummy.next;
-    }
-}
-
-
-class ListNode {
-
-    int val;
-    ListNode next;
-
-    ListNode() {
-    }
-
-    ListNode(int val) {
-        this.val = val;
-    }
-
-    ListNode(int val, ListNode next) {
-        this.val = val;
-        this.next = next;
     }
 }

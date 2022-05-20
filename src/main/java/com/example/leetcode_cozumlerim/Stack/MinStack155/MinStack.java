@@ -1,4 +1,4 @@
-package com.example.leetcode_cozumlerim.MinStack155;
+package com.example.leetcode_cozumlerim.Stack.MinStack155;
 
 import java.util.Stack;
 

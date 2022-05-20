@@ -1,4 +1,4 @@
-package com.example.leetcode_cozumlerim.ValidParentheses20;
+package com.example.leetcode_cozumlerim.Stack.ValidParentheses20;
 
 import java.util.HashMap;
 import java.util.Map;
