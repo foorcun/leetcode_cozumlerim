@@ -30,7 +30,7 @@ class CloneGraph133 {
         
     }
     
-    private Node dfs(Node node, Map<Node,Node>  oldToNew){
+    private Node dfs(Node node, Map<Node,Node>  oldToNew){ // dfs adı yerıne clone adı da kullanılabılırdı
         if(node == null ) return null;
         
          if (oldToNew.containsKey(node)){
@@ -39,7 +39,7 @@ class CloneGraph133 {
            Node copy =new Node(node.val);
             oldToNew.put(node,copy);
             for (Node nei : node.neighbors){
-                copy.neighbors.add(dfs(nei,   oldToNew));
+                copy.neighbors.add(dfs(nei,   oldToNew)); // dfs func, eger clone yapılmıssa Table den getır yoksa clonela actıon u yapıyor.
                 }
             return copy;
         
