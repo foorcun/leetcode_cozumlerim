@@ -30,7 +30,7 @@ public class Subsets2 { // bu algoritma Tree deki Node ugradigi anda resulta ekl
 
             // 5. Adim isValid e gerek yok cunku tum elemanlar kullanilabilir.
 
-            curr.add(nums[i]); //1. ADIM action
+            curr.add(nums[i]); //1. ADIM action  // burda stack data structure da kullanabilirdik sanırım
             bt(i+1,curr,nums); // 2. ADIM Iteration
             curr.remove(curr.size()-1); // 3. ADIM Remove Action
             // remove action da i degilde curr.size()-1 almamizin sebebi
