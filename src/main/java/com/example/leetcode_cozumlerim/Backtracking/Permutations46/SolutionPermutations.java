@@ -35,16 +35,16 @@ public class SolutionPermutations {
 
 //4. Adim DFS - for loop for all possible values
         for(int i=0 ; i< nums.length;i++){;
-//5. ADIM - isValid check - rules of the game
-    if(used[i] == true){
-        continue;
-    }
-//1. ADIM Action
+            //5. ADIM - isValid check - rules of the game
+            if(used[i] == true){
+               continue;
+            }
+            //1. ADIM Action
            used[i]= true; // bir kere element kullanildigi zaman ikinciye siradaki kullansin istedigimiz icin var
-        curr.add(nums[i]);
-// 2. ADIM Iteration
+           curr.add(nums[i]);
+            // 2. ADIM Iteration
             bt( curr,nums, used);
-// ve bitti mi check. if icinde helper(row,col+1) ile function calistiriliyor
+            // ve bitti mi check. if icinde helper(row,col+1) ile function calistiriliyor
 
             // 3. ADIM Remove action
             curr.remove(curr.size() -1);
