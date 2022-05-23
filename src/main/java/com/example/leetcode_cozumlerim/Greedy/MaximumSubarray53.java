@@ -1,4 +1,4 @@
-
+package com.example.leetcode_cozumlerim.Greedy;
 
 class MaximumSubarray53 {
     public int maxSubArray(int[] nums) {
